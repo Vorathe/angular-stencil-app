@@ -1,0 +1,66 @@
+{
+  "components": [
+    {
+      "tag": "ui-dropdown",
+      "dependencies": [],
+      "componentClass": "Dropdown",
+      "componentPath": "components/dropdown/dropdown.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/dropdown/dropdown.css"
+          ]
+        }
+      },
+      "props": [
+        {
+          "name": "icon",
+          "type": "String",
+          "attr": "icon"
+        },
+        {
+          "name": "label",
+          "type": "String",
+          "attr": "label"
+        }
+      ],
+      "states": [
+        {
+          "name": "isAnimating"
+        },
+        {
+          "name": "isOpen"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "document:click",
+          "method": "handleOffClick",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "toggleDropdown"
+        }
+      ],
+      "hostElement": {
+        "name": "host"
+      },
+      "events": [
+        {
+          "event": "onClickCallback"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.9.11",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'stencil-demo';
+  src:
+    url('stencil-demo.ttf') format('truetype'),
+    url('stencil-demo.woff') format('woff'),
+    url('stencil-demo.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

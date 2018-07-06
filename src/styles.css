@@ -1,1 +1,80 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --ui-dropdown-border-radius: 2px;
+  --ui-dropdown-box-shadow: 0 .063rem .188rem rgba(.32, .32, .32, .16);
+  --ui-dropdown-header-font-weight: 400;
+  --ui-dropdown-header-color: #d1d1d1;
+  --ui-dropdown-header-active-color: #fafafa;
+  --ui-dropdown-header-background-color: rgba(221, 39, 68, 0.92);
+  --ui-dropdown-header-padding: .750rem 1.125rem;
+  --ui-dropdown-header-font-size: 1rem;
+  --ui-dropdown-border: .063rem solid #f91d3a;
+  --ui-dropdown-list-border: var(--ui-dropdown-border);
+  --ui-dropdown-list-padding: 0;
+  --ui-dropdown-list-margin: 0 0 0 0;
+  --ui-dropdown-list-background-color: rgba(250, 250, 250, .92);
+  --ui-dropdown-focus-shadow: 0 0 3px #0a162f;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body,
+html,
+.demo-wrapper {
+  height: 100%;
+  width: 100%;
+}
+body {
+  background-color: #222;
+  font-family: 'Lato', sans-serif;
+}
+ui-dropdown {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  width: 18rem;
+  text-align: left;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  background-color: var(--ui-dropdown-list-background-color);
+  list-style: none;
+}
+li {
+  display: flex;
+  cursor: pointer;
+  flex-direction: row;
+  padding: var(--ui-dropdown-header-padding);
+  border-bottom: var(--ui-dropdown-border);
+}
+li:last-child {
+  border-bottom: 0;
+}
+li img {
+  height: 60px;
+  width: 60px;
+  margin-right: 1rem;
+  border-radius: 50%;
+  flex: 0;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 1px 3px rgba(0.32, 0.32, 0.32, 0.5);
+}
+.dropdown-wrapper {
+  display: flex;
+}
+.dropdown-description {
+  color: #fafafa;
+  position: absolute;
+  bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+}
+.demo-wrapper {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover !important;
+}
